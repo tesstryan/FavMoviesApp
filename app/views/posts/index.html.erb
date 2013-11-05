@@ -1,0 +1,8 @@
+<h3>Movies you should watch</h3>
+<p>
+<% @posts.each do |post| %>
+  <%= link_to post.title, post_url(post.id) %>
+  <%= link_to "Delete this sh!t", post_url(post.id), method: 'delete' %> <br>
+<% end %></p>
+
+<%= link_to "Add a new movie", new_post_url %>

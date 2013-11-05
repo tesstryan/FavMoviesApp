@@ -1,0 +1,18 @@
+<h3>Add a new movie below:</h3>
+
+<p>
+
+<%= form_tag posts_url %>
+
+<%= label_tag "title", "Title" %>
+<%= text_field_tag "title" %>
+<br>
+<%= label_tag "description", "Description" %>
+<%= text_field_tag "description" %>
+<br>
+<%= label_tag "year", "Year Released:" %>
+<%= text_field_tag "year" %>
+<br>
+<%= submit_tag "Submit!" %>
+
+</p>
